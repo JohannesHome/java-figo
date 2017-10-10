@@ -55,7 +55,7 @@ public class TaskStateTest {
 	}
 
 	@Test
-	public void test_02_tastStateNotNull() throws FigoException, IOException {
+	public void test_02_taskStateNotNull() throws FigoException, IOException {
 		TokenResponse tokenResponse = this.fc.credentialLogin(rand + USER, PASSWORD);
 		assertTrue(tokenResponse.getAccessToken() instanceof String);
 		FigoSession figoSession = new FigoSession(tokenResponse.getAccessToken());
